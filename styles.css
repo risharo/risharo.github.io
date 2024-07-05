@@ -1,16 +1,18 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
+    background-color: #282c34;
+    color: #61dafb;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -20,96 +22,137 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    padding: 0 1em;
+    padding: 0 1rem;
 }
 
-.logo {
-    font-size: 1.5em;
+nav .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.nav-links {
+nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 1em;
 }
 
-.nav-links a {
-    color: #fff;
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #61dafb;
     text-decoration: none;
-    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-.section {
-    padding: 4em 1em;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.intro {
-    text-align: center;
-}
-
-.intro h1 {
-    font-size: 2.5em;
-    margin: 0.5em 0;
-}
-
-.intro p {
-    font-size: 1.2em;
-    margin: 0.5em 0;
+nav ul li a:hover {
+    color: #fff;
 }
 
 .profile-pic {
-    border-radius: 50%;
     width: 150px;
-    height: 150px;
-    margin-top: 1em;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-.project, .experience, .education {
-    margin-bottom: 2em;
+p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-form {
+.social-icons {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    max-width: 600px;
-    margin: auto;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-input, textarea {
-    padding: 0.5em;
+.social-icons a {
+    color: #282c34;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #61dafb;
+}
+
+.project, .experience {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.project h3, .experience h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
-button {
-    padding: 0.7em;
+form button {
+    padding: 1rem 2rem;
     border: none;
     background-color: #333;
     color: #fff;
-    border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

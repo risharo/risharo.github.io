@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishabh Arora</title>
+    <title>Rishabh Arora | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Rishabh Arora</div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -24,88 +25,92 @@
     </header>
 
     <section id="home" class="section">
-        <div class="intro">
+        <div class="container">
+            <img src="profile.jpg" alt="Rishabh Arora" class="profile-pic">
             <h1>Rishabh Arora</h1>
             <p>Final Year Undergraduate, Civil Engineering, IIT Kanpur</p>
-            <p><a href="mailto:arorarishabh903@gmail.com">arorarishabh903@gmail.com</a> | <a href="tel:+917023764361">+91-7023764361</a></p>
-            <img src="profile.jpg" alt="Rishabh Arora" class="profile-pic">
+            <p>Email: arorarishabh903@gmail.com | Phone: +91-7023764361</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/risharo" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/risharo" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </section>
 
     <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I am a final-year undergraduate student studying Civil Engineering at IIT Kanpur. I have a keen interest in data analysis, machine learning, and financial markets.</p>
-        <p>Connect with me: 
-            <a href="https://www.linkedin.com/in/risharo" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/risharo" target="_blank"><i class="fab fa-github"></i></a>
-        </p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>A brief introduction about yourself, your academic background, and your professional interests.</p>
+        </div>
     </section>
 
     <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Stock Market Data Analysis & Stock Price Prediction</h3>
-            <p>Objective: To make an attempt at predicting the stock market by using the ANN (Artificial Neural Network) methodology.</p>
-            <p>Approach: Extracted past six months data of five companies from the CMIE website. Reduced the multidimensionality using PCA and used it as an input vector for ANN.</p>
-            <p>Results: The resulting model outperformed and predicted the prices of stocks with an accuracy of more than 97%.</p>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Stock Market Data Analysis & Stock Price Prediction using Neural Networks</h3>
+                <p>Objective: To make an attempt at predicting the stock market by using the ANN (Artificial Neural Network) methodology.</p>
+                <p>Approach: Extracted past six months data of five companies from the Centre for Monitoring Indian economies (CMIE) website...</p>
+                <p>Results: The resulting model outperformed and predicted the prices of stocks with an accuracy of more than 97 %</p>
+            </div>
+            <!-- Add more projects similarly -->
         </div>
-        <div class="project">
-            <h3>Medical Insurance Cost Prediction</h3>
-            <p>Objective: To accurately predict the medical insurance charges of a person based on categorical and continuous features of the dataset.</p>
-            <p>Approach: Visualized & preprocessed the dataset by normalizing it and then dividing it into a 20% training & 80% testing dataset. Employed & compared different models on training dataset.</p>
-            <p>Results: Achieved an accuracy of 90.71% on the testing dataset using the Gradient Boosting Regressor algorithm.</p>
-        </div>
-        <!-- Add more projects similarly -->
     </section>
 
     <section id="experience" class="section">
-        <h2>Professional Experience</h2>
-        <div class="experience">
-            <h3>FundU Games | Marketing Intern</h3>
-            <p>Objective: To develop a growth-driving strategy model by increasing the number of logged-in users, user engagement, and revenue.</p>
-            <p>Approach: Digital marketing for the product was planned after researching current market trends across social media channels. Utilized PowToon to make an introductory video that described FundU’s services and the idea.</p>
-            <p>Impact: Significantly expanded FundU’s reach with daily posts and videos about finance and trading. Innovative public relations and advertising strategy models helped the startup get the attention of potential investors.</p>
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>FundU Games | Marketing Intern</h3>
+                <p>Objective: To develop a growth-driving strategy model by increasing the number of logged-in users, user engagement, and revenue...</p>
+                <p>Impact: Significantly expanded FundU’s reach with daily posts and videos about finance and trading...</p>
+            </div>
+            <!-- Add more experience similarly -->
         </div>
-        <!-- Add more experiences similarly -->
     </section>
 
     <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="education">
-            <h3>B.Tech. in Civil Engineering, IIT Kanpur</h3>
-            <p>2019-2023 | GPA: 6.4/10</p>
-        </div>
-        <div class="education">
-            <h3>Class XII (CBSE), Polkaji Shikshan Sansthan, Sikar</h3>
-            <p>2018 | 78%</p>
-        </div>
-        <div class="education">
-            <h3>Class X (CBSE), Vidya Bharti Public School, Sikar</h3>
-            <p>2016 | CGPA: 10/10</p>
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>B.Tech. in Civil Engineering, IIT Kanpur, 2019-23, 6.4/10</li>
+                <li>Class XII (CBSE), Polkaji Shikshan Sansthan, Sikar, 78%</li>
+                <li>Class X (CBSE), Vidya Bharti Public School, Sikar, 10/10</li>
+            </ul>
+            <h3>Scholastic Achievements</h3>
+            <ul>
+                <li>Awarded the Certificate of Merit by CBSE for outstanding performance comprehensively in CBSE - X examination.</li>
+                <li>Secured an All India Rank of 4423 in JEE-Advanced and an All India Rank of 4646 in JEE-Main among 11.5 lakh candidates</li>
+            </ul>
         </div>
     </section>
 
     <section id="skills" class="section">
-        <h2>Skills</h2>
-        <p><strong>Languages:</strong> C/C++, Python, SQL</p>
-        <p><strong>Utilities:</strong> Numpy, Pandas, Seaborn, Sklearn, Matplotlib</p>
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: C/C++, Python, SQL</li>
+                <li>Utilities: Numpy, Pandas, Seaborn, Sklearn, Matplotlib</li>
+            </ul>
+        </div>
     </section>
 
     <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me for any queries or opportunities:</p>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Rishabh Arora. All rights reserved.</p>
+        <p>&copy; 2024 Rishabh Arora. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
